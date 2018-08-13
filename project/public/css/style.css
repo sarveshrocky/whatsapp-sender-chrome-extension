@@ -1,0 +1,140 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.container-fluid {	
+	max-width:800px; 
+}
+a {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+/* -------------------- form page -------------------- */ 
+form {
+	border: 1px solid #cccccc;
+	padding: 20px;
+	margin-top:20px;
+	border-radius:5px;
+}
+textarea {
+	resize:none;
+}
+.clear {
+	clear:both;
+}
+h1 ,h2 {	
+	font-weight: bold;
+	text-align: center;
+}
+.comment textarea {
+	height: 140px;
+}
+.but-mar {
+	margin: 17px 0px;
+}
+.but-mar input {
+	margin-left:20px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.date-box {
+	margin-top: 15px;
+}
+@media (max-width: 480px) {
+	h1 {	
+		font-size: 30px;
+		padding-bottom: 10px;
+	}
+	form {
+		border: 1px solid #cccccc;
+		padding: 20px 20px 0 20px;
+		margin-top:20px;
+		border-radius:5px;
+	}
+	.but-mar button {
+		width: 47%;
+		margin:5px 0 20px 0;
+		float: left;
+	}	
+	.but-mar button:last-child {
+		float: right;
+	}
+	.date {
+		min-width:100%;
+		width: 100%;
+	}
+	.comment textarea {
+		height: 120px;
+	}
+}
+
+/* -------------------- msg page -------------------- */ 
+.alert {
+	width: 70%;
+	margin: 0px auto;
+	min-width: 290px;	
+	margin-top: 20px;
+	margin-bottom:20px;
+	text-align: center;
+}
+.but-marl {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+.but-marl a { 
+	font-size: 20px;
+	margin-right: 20px;
+}
+.but-marl span {
+	display: block;	
+	padding-bottom: 15px;
+}
+@media (max-width: 480px) {
+	.but-marl a { 
+		width: auto;
+	}
+}
+
+/* -------------------- all msg page -------------------- */ 
+.box-com .panel {
+	margin-top: 30px;
+}
+.alert-dangers {
+    color: #d61100;
+}
+.alert-yellos {
+    color: #ff8a00;
+}
+.green {
+	color: #019b5d;
+}
+@media (max-width: 760px) {
+	.box-com {
+		padding:0 20px 0 20px;
+	}
+	.box-com .panel a {
+		font-size: 15px;
+	}
+}

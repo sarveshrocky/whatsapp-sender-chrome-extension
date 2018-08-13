@@ -1,0 +1,1 @@
+ALTER TABLE `phone_numbers` ADD `last_activity` INT UNSIGNED NULL AFTER `phone`;
