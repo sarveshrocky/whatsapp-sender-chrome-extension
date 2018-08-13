@@ -34,6 +34,7 @@ class Whatsapp extends Controller
         if ($this->input->post('submit')) {
             if ($model->load($this->input->post()) && $model->validate()) {
                 $model->phone = formatPhone($model->phone, 'WA', 'save');
+                $model->is_visible = true;
                 $result = $model->save();
                 if ($result['status'] === 'success') {
                     redirect('whatsapp');

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Привязка аккаунта</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="config/web.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Добавление аккаунта</h1>
+      <p>Для того чтобы начать использовать данное расширение, Вам необходимо связь его
+        с системой комментариев. Для этого перейдите по <a id="genLink" href="#" target="_blank">этой ссылке</a>.
+        Полученный код нужно ввести в поле ниже.</p>
+      <p>
+      <form class="form-inline" id="form_add">
+        <div class="form-group input-group-lg">
+          <input type="text" class="form-control" id="form_code" placeholder="Введите код">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Продолжить</button>
+      </form>
+      <div class="alert alert-success hidden" id="connect_success_alert">
+        <strong>Расширение успешно зарегистрировано.</strong>
+        Может закрыть эту страницу.
+      </div>
+      <div class="alert alert-danger hidden" id="form_errors_alert"></div>
+      </p>
+    </div>
+  </div>
+  <script src="js/form_add.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "WhatsApp plugin",
+  "description": "Send messages via WhatsApp Web",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "WhatsApp Web Chrome"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs",
+    "activeTab",
+    "<all_urls>"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "content_scripts": [{
+    "js": ["js/content.js"],
+    "matches": ["https://web.whatsapp.com/*"]
+  }],
+  "web_accessible_resources": ["script_listener.js"],
+  "externally_connectable": {
+    "matches": ["https://web.whatsapp.com/*"]
+  }
+}
